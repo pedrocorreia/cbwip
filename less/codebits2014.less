@@ -190,11 +190,36 @@ body {
 }
 
 header {
-  background: @main-nav-bg;
-  nav#main-nav, nav#main-nav-mobile {
-    a {
-      color: @main-nav-color;
-      text-transform: uppercase;
+  .topbar {
+    background: @main-nav-bg;
+    nav#main-nav, nav#main-nav-mobile {
+      a {
+        color: @main-nav-color;
+        text-transform: uppercase;
+      }
+    }
+  } 
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 960px) {
+    /* your css goes here */
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 650px) and (max-width: 959px) {
+    /* your css goes here */
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 649px) {
+  header {
+    .topbar {
+      // position: fixed;
+      // width: 100%;
+      // top: 0;
+      // left: 0;
+      // right: 0;
     }
   }
 }

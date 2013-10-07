@@ -7325,11 +7325,23 @@ body {
 .snapjs-expand-right .snap-drawer-right {
   width: 100%;
 }
-header {
+header .topbar {
   background: #1b1b1b;
 }
-header nav#main-nav a,
-header nav#main-nav-mobile a {
+header .topbar nav#main-nav a,
+header .topbar nav#main-nav-mobile a {
   color: #54b948;
   text-transform: uppercase;
+}
+/* LARGE SCREENS */
+@media screen and (min-width: 960px) {
+  /* your css goes here */
+}
+/* MEDIUM SCREENS */
+@media screen and (min-width: 650px) and (max-width: 959px) {
+  /* your css goes here */
+}
+/* SMALL SCREENS */
+@media screen and (max-width: 649px) {
+  
 }

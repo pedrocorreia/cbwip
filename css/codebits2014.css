@@ -7328,7 +7328,8 @@ body {
 header {
   background: #1b1b1b;
 }
-header nav#main-nav a {
+header nav#main-nav a,
+header nav#main-nav-mobile a {
   color: #54b948;
   text-transform: uppercase;
 }

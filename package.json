@@ -1,0 +1,17 @@
+{
+    "name": "codebits2014"
+  , "description": "NOYFB"
+  , "version": "1.0.0"
+  , "repository": {
+      "type": "git"
+    , "url": "https://gitlab.intra.sapo.pt/pcorreia/cb2014"
+  }
+  , "bugs": {
+      "url": "https://gitlab.intra.sapo.pt/pcorreia/cb2014/issues"
+  }
+  , "devDependencies": {
+      "grunt": "~0.4.1"
+    , "grunt-contrib-watch": "~0.5.3"
+    , "grunt-contrib-less": "~0.7.0"
+  }
+}

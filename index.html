@@ -34,47 +34,37 @@
     </head>
     
     <body>
-        <div class="snap-drawers" id="content">
+        <div class="snap-drawers">
             <div class="snap-drawer snap-drawer-left">
-                <div>
-                    <h4>Demos</h4>
-                    <ul class="unstyled">
-                        <li><a href="default.html">Default</a></li>
-                        <li><a href="noDrag.html">No Drag</a></li>
-                        <li><a href="dragElement.html">Drag Element</a></li>
-                        <li><a href="rightDisabled.html">Right Disabled</a></li>
-                        <li><a href="hyperextend.html">Hyperextension Disabled</a></li>
-                        <li><a href="skinnyThreshold.html">Skinny Threshold</a></li>
-                        <li><a href="toggles.html">Toggles</a></li>
-                        <li><a href="classNames.html">Class Names</a></li>
-                        <li><a href="expand.html">Expanding</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="ratchet/template.html">Ratchet</a></li>
-                    </ul>
-                    <div>
-                        <p>Toggles are easy to create. Snap.js gives you the state of the pane and allows you to make decisions simply.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non erat ac leo ultrices blandit sed vel risus. Pellentesque facilisis blandit auctor. Maecenas vestibulum vulputate tincidunt. Mauris nec quam libero. Fusce eget ligula non leo varius condimentum quis ac elit. Donec id urna ut neque semper ultrices. Proin ut suscipit felis. Nullam neque felis, ullamcorper scelerisque volutpat vel, vehicula vehicula neque. Aenean scelerisque elit ac erat sagittis ullamcorper.</p>
-                    </div>
-                </div>
+                <nav class="ink-navigation">
+                    <ul class="menu vertical">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#speakers">speakers</a></li>
+                        <li><a href="#venues">venues</a></li>
+                        <li><a href="#past-editions">past editions</a></li>
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#" id="open-left">AAAA</a></li>
+                    </ul>                    
+                </nav>
             </div>
         </div>
-        <div class="snap-content">
+        <div class="snap-content" id="content">
             <header>
-                <nav class="ink-navigation" id="main-nav">
                     <div class="ink-grid">
-                        <ul class="menu horizontal">
-                            <li><a href="#about">about</a></li>
-                            <li><a href="#speakers">speakers</a></li>
-                            <li><a href="#venues">venues</a></li>
-                            <li><a href="#past-editions">past editions</a></li>
-                            <li><a href="#blog">blog</a></li>
-                            <li><a href="#" id="open-left">AAAA</a></li>
-                        </ul>
+                        <nav class="ink-navigation hide-small" id="main-nav">
+                                <ul class="menu horizontal">
+                                    <li><a href="#about">about</a></li>
+                                    <li><a href="#speakers">speakers</a></li>
+                                    <li><a href="#venues">venues</a></li>
+                                    <li><a href="#past-editions">past editions</a></li>
+                                    <li><a href="#blog">blog</a></li>
+                                    <li><a href="#" id="open-left">AAAA</a></li>
+                                </ul>
+                        </nav>
                     </div>
-                </nav>
             </header>
             <div class="ink-grid">
-                <section id="about">
+                <section class="top-space" id="about">
                     <h1>about</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -113,7 +103,7 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </section>
-                <section id="speakers">
+                <section class="top-space" id="speakers">
                     <h1>speakers</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -152,7 +142,7 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </section>
-                <section id="venues">
+                <section class="top-space" id="venues">
                     <h1>venues</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -191,7 +181,7 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </section>
-                <section id="past-editions">
+                <section class="top-space" id="past-editions">
                     <h1>past-editions</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -230,7 +220,7 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </section>
-                <section id="blog">
+                <section class="top-space" id="blog">
                     <h1>blog</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -273,7 +263,21 @@
         </div>
         <script type="text/javascript">
         var snapper = new Snap({
-          element: document.getElementById('content')
+            element: document.getElementById('content'),
+            dragger: null,
+            disable: 'right',
+            addBodyClasses: true,
+            hyperextensible: false,
+            resistance: 0.5,
+            flickThreshold: 50,
+            transitionSpeed: 0.3,
+            easing: 'ease',
+            maxPosition: 266,
+            minPosition: -266,
+            tapToClose: true,
+            touchToDrag: true,
+            slideIntent: 40,
+            minDragDistance: 5
         });
         </script>
     </body>

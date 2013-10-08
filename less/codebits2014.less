@@ -1,96 +1,32 @@
 @import "ink.less";
+@import "drawer.less";
+@import "museo-sans.less";
 
 @main-nav-bg: rgb(27,27,27);
+@black: rgb(27,27,27);
 @main-nav-color: rgb(84,185,72);
+@white: rgb(255,255,255);
+@green: rgb(84,185,72);
+@yellow: rgb(229,190,33);
+@red: rgb(195,18,40);
+@orange: rgb(227,117,55);
 
-@font-face {
-    font-family: 'museosans-100';
-    src: url('../font/museosans-100.eot');
-    src: url('../font/museosans-100.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-100.woff') format('woff'),
-         url('../font/museosans-100.ttf') format('truetype'),
-         url('../font/museosans-100.svg#museosans100') format('svg');
-}
+.rotate() {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 
-@font-face {
-    font-family: 'museosans-100-italic';
-    src: url('../font/museosans-100-italic.eot');
-    src: url('../font/museosans-100-italic.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-100-italic.woff') format('woff'),
-         url('../font/museosans-100-italic.ttf') format('truetype'),
-         url('../font/museosans-100-italic.svg#museosans100') format('svg');
-}
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 
-@font-face {
-    font-family: 'museosans-300';
-    src: url('../font/museosans-300.eot');
-    src: url('../font/museosans-300.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-300.woff') format('woff'),
-         url('../font/museosans-300.ttf') format('truetype'),
-         url('../font/museosans-300.svg#museosans300') format('svg');
-}
-
-@font-face {
-    font-family: 'museosans-300-italic';
-    src: url('../font/museosans-300-italic.eot');
-    src: url('../font/museosans-300-italic.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-300-italic.woff') format('woff'),
-         url('../font/museosans-300-italic.ttf') format('truetype'),
-         url('../font/museosans-300-italic.svg#museosans500') format('svg');
-}
-
-@font-face {
-    font-family: 'museosans-500';
-    src: url('../font/museosans-500.eot');
-    src: url('../font/museosans-500.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-500.woff') format('woff'),
-         url('../font/museosans-500.ttf') format('truetype'),
-         url('../font/museosans-500.svg#museosans500') format('svg');
-}
-
-@font-face {
-    font-family: 'museosans-500-italic';
-    src: url('../font/museosans-500-italic.eot');
-    src: url('../font/museosans-500-italic.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-500-italic.woff') format('woff'),
-         url('../font/museosans-500-italic.ttf') format('truetype'),
-         url('../font/museosans-500-italic.svg#museosans500') format('svg');
-}
-
-@font-face {
-    font-family: 'museosans-700';
-    src: url('../font/museosans-700.eot');
-    src: url('../font/museosans-700.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-700.woff') format('woff'),
-         url('../font/museosans-700.ttf') format('truetype'),
-         url('../font/museosans-700.svg#museosans700') format('svg');
-}
-
-@font-face {
-    font-family: 'museosans-700-italic';
-    src: url('../font/museosans-700-italic.eot');
-    src: url('../font/museosans-700-italic.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-700-italic.woff') format('woff'),
-         url('../font/museosans-700-italic.ttf') format('truetype'),
-         url('../font/museosans-700-italic.svg#museosans700') format('svg');
-}
-
-@font-face {
-    font-family: 'museosans-900';
-    src: url('../font/museosans-900.eot');
-    src: url('../font/museosans-900.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-900.woff') format('woff'),
-         url('../font/museosans-900.ttf') format('truetype'),
-         url('../font/museosans-900.svg#museosans900') format('svg');
-}
-
-@font-face {
-    font-family: 'museosans-900-italic';
-    src: url('../font/museosans-900-italic.eot');
-    src: url('../font/museosans-900-italic.eot?#iefix') format('embedded-opentype'),
-         url('../font/museosans-900-italic.woff') format('woff'),
-         url('../font/museosans-900-italic.ttf') format('truetype'),
-         url('../font/museosans-900-italic.svg#museosans900') format('svg');
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .fw-regular {
@@ -104,101 +40,57 @@
 }
 
 body {
-  .fw-light;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  .fw-thin;
+  color: @black;
+  font-size: 16px;
+ }
+
+header {
+    background: @main-nav-bg;
 }
 
-.snap-content {
-  background: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  z-index: 2;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-       -o-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+#main-nav, 
+#main-nav-mobile,
+#side-nav {
+  a {
+    color: @main-nav-color;
+    text-transform: uppercase;
+    &:hover {
+      color: @white;
+      text-decoration: none;
+    }
+  }
 }
 
-.snap-drawers {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  background: @main-nav-bg;
-  ul {
-    li {
-      a {
-        color: @main-nav-color;
-        text-transform: uppercase;
-        border-bottom: 1px white solid;
+#side-nav {
+  h1 {
+    font-size: 1.8em;
+    padding: 0.5em 0.6em;
+    color: @white;
+    span.tagline {
+      font-size: 0.45em;
+      margin-left: 0.1em;
+      .rotate;
+    }
+  }
+}
+
+#main-nav {
+  li {
+    a {
+      &:first-child {
+        padding-left: 0;
       }
     }
   }
 }
 
-.snap-drawer {
-  background: @main-nav-bg;
-  position: absolute;
-  top: 0;
-  right: auto;
-  bottom: 0;
-  left: auto;
-  width: 265px;
-  height: auto;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: width 0.3s ease;
-     -moz-transition: width 0.3s ease;
-      -ms-transition: width 0.3s ease;
-       -o-transition: width 0.3s ease;
-          transition: width 0.3s ease;
-}
-
-.snap-drawer-left {
-  left: 0;
-  z-index: 1;
-}
-
-.snap-drawer-right {
-  right: 0;
-  z-index: 1;
-}
-
-.snapjs-left .snap-drawer-right,
-.snapjs-right .snap-drawer-left {
-  display: none;
-}
-
-.snapjs-expand-left .snap-drawer-left,
-.snapjs-expand-right .snap-drawer-right {
-  width: 100%;
-}
-
-header {
-  .topbar {
-    background: @main-nav-bg;
-    nav#main-nav, nav#main-nav-mobile {
-      a {
-        color: @main-nav-color;
-        text-transform: uppercase;
-      }
-    }
-  } 
+section {
+  &#about { background: @green; }
+  &#speakers { background: @yellow; }
+  &#venues { background: @orange; }
+  // &#past-edition { background: ; }
+  // &#blog { background: ; }
 }
 
 /* LARGE SCREENS */
@@ -213,13 +105,5 @@ header {
 
 /* SMALL SCREENS */
 @media screen and (max-width: 649px) {
-  header {
-    .topbar {
-      // position: fixed;
-      // width: 100%;
-      // top: 0;
-      // left: 0;
-      // right: 0;
-    }
-  }
+  
 }

@@ -13,8 +13,10 @@ var snapper = new Snap({
     tapToClose: true,
     touchToDrag: true,
     slideIntent: 40,
-    minDragDistance: 5
+    minDragDistance: 5,
+    additionalElements: ['cena'],
 });
+
 document.getElementById("snap-toggler").addEventListener('click', function(){
     if( snapper.state().state=="left" ){
         snapper.close();
@@ -30,6 +32,7 @@ window.addEventListener('load',function(){
 window.addEventListener('resize', function(){
     if (window.innerWidth >= 650) {
         snapper.disable();
+        snapper.close();
     } else {
         snapper.enable();
     }

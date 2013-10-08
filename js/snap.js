@@ -28,8 +28,9 @@
             tapToClose: true,
             touchToDrag: true,
             slideIntent: 40, // degrees
-            minDragDistance: 5
-        },
+            minDragDistance: 5,
+            additionalElements: null
+        },        
         cache = {
             simpleStates: {
                 opening: null,
@@ -93,7 +94,7 @@
             transitionCallback: function(){
                 return (cache.vendor==='Moz' || cache.vendor==='ms') ? 'transitionend' : cache.vendor+'TransitionEnd';
             },
-            canTransform: function(){
+            canTransform: function(){                
                 return typeof settings.element.style[cache.vendor+'Transform'] !== 'undefined';
             },
             deepExtend: function(destination, source) {
@@ -203,6 +204,17 @@
                         cache.easingTo = n;
 
                         settings.element.style[cache.vendor+'Transition'] = 'all ' + settings.transitionSpeed + 's ' + settings.easing;
+                        
+                        if(settings.additionalElements) {                    
+                            if(settings.additionalElements.length) {
+                                for(var elm in settings.additionalElements){
+                                    var curElm = document.getElementById(settings.additionalElements[elm]);
+                                    curElm.style[cache.vendor+'Transition'] = 'all ' + settings.transitionSpeed + 's ' + settings.easing;
+                                }
+                            } else {
+                                settings.additionalElements.style[cache.vendor+'Transition'] = 'all ' + settings.transitionSpeed + 's ' + settings.easing;                                    
+                            }
+                        }
 
                         cache.animatingInterval = setInterval(function() {
                             utils.dispatchEvent('animating');
@@ -236,6 +248,18 @@
                     if( utils.canTransform() ){
                         var theTranslate = 'translate3d(' + n + 'px, 0,0)';
                         settings.element.style[cache.vendor+'Transform'] = theTranslate;
+
+                        if(settings.additionalElements) {                    
+                            if(settings.additionalElements.length) {
+                                for(var elm in settings.additionalElements){
+                                    var curElm = document.getElementById(settings.additionalElements[elm]);
+                                    curElm.style[cache.vendor+'Transform'] = theTranslate;
+                                }
+                            } else {
+                                settings.additionalElements.style[cache.vendor+'Transform'] = theTranslate;
+                            }
+                        }
+
                     } else {
                         settings.element.style.width = (win.innerWidth || doc.documentElement.clientWidth)+'px';
 

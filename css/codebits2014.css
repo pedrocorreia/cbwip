@@ -5771,6 +5771,7 @@ body {
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  margin-top: 2em;
 }
 .snap-drawers {
   position: absolute;
@@ -5886,6 +5887,11 @@ body {
 }
 header {
   background: #1b1b1b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 #main-nav a,
 #main-nav-mobile a,
@@ -5937,7 +5943,7 @@ section#venues {
 }
 /* LARGE SCREENS */
 @media screen and (min-width: 960px) {
-  /* your css goes here */
+  
 }
 /* MEDIUM SCREENS */
 @media screen and (min-width: 650px) and (max-width: 959px) {

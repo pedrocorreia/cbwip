@@ -47,6 +47,11 @@ body {
 
 header {
     background: @main-nav-bg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 #main-nav, 
@@ -95,7 +100,8 @@ section {
 
 /* LARGE SCREENS */
 @media screen and (min-width: 960px) {
-    /* your css goes here */
+    .snap-content {
+    }
 }
 
 /* MEDIUM SCREENS */

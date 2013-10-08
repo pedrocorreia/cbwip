@@ -29,6 +29,12 @@
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
+.fw-black {
+  font-family: "museosans-900";
+}
+.fw-bold {
+  font-family: "museosans-700";
+}
 .fw-regular {
   font-family: "museosans-500";
 }
@@ -42,7 +48,7 @@
 body {
   .fw-thin;
   color: @black;
-  font-size: 16px;
+  font-size: 18px;
  }
 
 .topbar {
@@ -73,9 +79,9 @@ body {
     padding: 0.5em 0.6em;
     color: @white;
     span.tagline {
+      .fw-light;
       font-size: 0.45em;
       margin-left: 0.1em;
-      .rotate;
     }
   }
 }
@@ -91,24 +97,108 @@ body {
 }
 
 section {
-  &#about { background: @green; }
-  &#speakers { background: @yellow; }
+  &#intro { background: @green; }
+  &#about { background: @yellow;  }
+  &#speakers { background: @red; color: @white; }
   &#venues { background: @orange; }
   // &#past-edition { background: ; }
   // &#blog { background: ; }
 }
 
+.cb-button {
+  padding: 1em 1.5em;
+  #ink > #border-radius > .all (3px);
+  &.huge {
+    font-size: 1.5em;
+  }
+  &.large {
+    font-size: 1.2em;
+  }
+  &.small {
+    font-size: 0.9em;
+  }
+  &.tiny {
+    font-size: 0.75em;
+  }
+
+  &.white {
+    background: @white;
+    color: @green;
+    &:hover {
+      #ink > #shadows > .box-shadow (0px,0px,4px,1px,fade(darken(@green,30%),50%));    
+      text-decoration: none;
+    }
+  }
+}
+
+div.speaker-avatar {
+  position: relative;
+  overflow: hidden;
+  img {
+    #ink > #border-radius > .all (50% 50%);
+    border: 10px @white solid;
+    &:hover {
+      #ink > #shadows > .box-shadow (0px,0px,4px,1px,fade(darken(@red,60%),50%));    
+      text-decoration: none;      
+    }
+    &:hover {
+      .speaker-info {
+        display: block;
+      }
+    }
+  }
+  .speaker-info {
+    width: 85%;
+    height: 98%;
+    background: fade(@black,60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    #ink > #border-radius > .all (50% 50%);
+    line-height: 216px;
+  }
+}
+
+section {
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.9em;
+  }
+  h2 {
+    text-transform: uppercase;  
+    font-size: 1em;
+    & + p {
+      margin-top: 0.2em !important;
+    }
+  }
+  p {
+    
+  }
+}
+
 /* LARGE SCREENS */
 @media screen and (min-width: 960px) {
-
+  .snap-content {
+    margin-top: 2.5em;
+  }
 }
 
 /* MEDIUM SCREENS */
 @media screen and (min-width: 650px) and (max-width: 959px) {
-    /* your css goes here */
+ .snap-content {
+    margin-top: 2.5em;
+  }
 }
 
 /* SMALL SCREENS */
 @media screen and (max-width: 649px) {
-
+  .snap-content {
+    margin-top: 2.5em;
+  }
+  .small-border-bottom {
+    border-bottom: 1px fade(@black,20%) solid;
+  }
 }

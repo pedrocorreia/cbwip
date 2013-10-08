@@ -29,6 +29,9 @@
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
+.fw-bold {
+  font-family: "museosans-700";
+}
 .fw-regular {
   font-family: "museosans-500";
 }
@@ -42,7 +45,7 @@
 body {
   .fw-thin;
   color: @black;
-  font-size: 16px;
+  font-size: 18px;
  }
 
 .topbar {
@@ -91,24 +94,51 @@ body {
 }
 
 section {
-  &#about { background: @green; }
-  &#speakers { background: @yellow; }
+  &#intro { background: @green; }
+  &#about { background: @yellow;  }
+  &#speakers { background: @red; color: @white; }
   &#venues { background: @orange; }
   // &#past-edition { background: ; }
   // &#blog { background: ; }
 }
 
+section {
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.9em;
+  }
+  h2 {
+    text-transform: uppercase;  
+    font-size: 1em;
+    & + p {
+      margin-top: 0.1em;
+    }
+  }
+  p {
+    
+  }
+}
+
 /* LARGE SCREENS */
 @media screen and (min-width: 960px) {
-
+  .snap-content {
+    margin-top: 2em;
+  }
 }
 
 /* MEDIUM SCREENS */
 @media screen and (min-width: 650px) and (max-width: 959px) {
-    /* your css goes here */
+ .snap-content {
+    margin-top: 2.3em;
+  }
 }
 
 /* SMALL SCREENS */
 @media screen and (max-width: 649px) {
-
+  .snap-content {
+    margin-top: 2.5em;
+  }
+  .small-border-bottom {
+    border-bottom: 1px fade(@black,20%) solid;
+  }
 }

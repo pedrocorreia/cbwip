@@ -6414,7 +6414,7 @@ div.speaker-info .tr {
 div.speaker-info .tr .td {
   display: table-cell;
   vertical-align: middle;
-  height: 264px;
+  height: 196px;
 }
 section h1 {
   text-transform: uppercase;
@@ -6425,7 +6425,10 @@ section h2 {
   font-size: 1em;
 }
 section h2 + p {
-  margin-top: 0.2em !important;
+  margin-top: 0.4em !important;
+}
+section p + p {
+  margin-top: 0.4em !important;
 }
 /* LARGE SCREENS */
 @media screen and (min-width: 960px) {

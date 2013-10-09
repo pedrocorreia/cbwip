@@ -41,5 +41,19 @@ window.addEventListener('resize', function(){
     } else {
         snapper.enable();
     }
+
+
+
+
 });
-// });
+
+(function(){
+    window.addEventListener('resize',function(){
+        var tds = Ink.ss('.td');
+        for ( var i=0; i < tds.length; i++ ) {
+            var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
+            var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
+            tds[i].style.height = avatarHeight + 'px';
+        }
+    });
+}).call(this, window, document);

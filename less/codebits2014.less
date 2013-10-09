@@ -2,6 +2,7 @@
 @import "drawer.less";
 @import "museo-sans.less";
 
+
 @main-nav-bg: rgb(27,27,27);
 @black: rgb(27,27,27);
 @main-nav-color: rgb(84,185,72);
@@ -168,13 +169,13 @@ div.speaker-avatar {
 }
 
 div.speaker-info {
-  position: relative;
-  display: table;
-    .bof {
+      display: table;
+    .tr {
       display: table-row;
-      div {
+      .td {
         display: table-cell;
         vertical-align: middle;
+        height: 264px;
       }
     }
   }
@@ -215,16 +216,7 @@ section {
   .snap-content {
     margin-top: 2.5em;
   }
-  #about {
-    p {
-       border-bottom: 1px fade(@black,20%) solid;  
-    }
-    div.l-33.m-33.s-100 {
-      &:last-child {
-        p {
-          border-bottom: none;
-        }
-      }
-    }
+  .small-border-bottom {
+    border-bottom: 1px fade(@black,20%) solid;  
   }
 }

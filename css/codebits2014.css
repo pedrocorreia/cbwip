@@ -6406,15 +6406,15 @@ div.speaker-avatar img:hover {
   text-decoration: none;
 }
 div.speaker-info {
-  position: relative;
   display: table;
 }
-div.speaker-info .bof {
+div.speaker-info .tr {
   display: table-row;
 }
-div.speaker-info .bof div {
+div.speaker-info .tr .td {
   display: table-cell;
   vertical-align: middle;
+  height: 264px;
 }
 section h1 {
   text-transform: uppercase;
@@ -6444,10 +6444,7 @@ section h2 + p {
   .snap-content {
     margin-top: 2.5em;
   }
-  #about p {
+  .small-border-bottom {
     border-bottom: 1px rgba(27, 27, 27, 0.2) solid;
-  }
-  #about div.l-33.m-33.s-100:last-child p {
-    border-bottom: none;
   }
 }

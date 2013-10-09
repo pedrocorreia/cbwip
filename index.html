@@ -26,29 +26,32 @@
   <![endif]-->
   <script type="text/javascript" src="js/modernizr.js"></script>
   <script type="text/javascript" src="js/snap.js"></script>
-  <script type="text/javascript" src="js/smooth.js"></script>
+  <script type="text/javascript" src="http://cdn.ink.sapo.pt/2.2.1/js/ink.min.js"></script>
+  <script type="text/javascript" src="http://cdn.ink.sapo.pt/2.2.1/js/ink-ui.min.js"></script>
+
+  <script type="text/javascript" src="http://cdn.ink.sapo.pt/2.2.1/js/autoload.js"></script>
 </head>
 
 <body>
   <div class="snap-drawers hide-m hide-l cb-nav">
     <div class="snap-drawer snap-drawer-left" id="side-nav">
-      <h1>CODEBITS<span class="tagline">2014</span></h1>
+      <h1><a href="#intro">CODEBITS</h1></a></li>                          
       <nav class="ink-navigation">
         <ul class="menu vertical">
           <li>
-            <a class="scroll" href="#about">about</a>
+            <a href="#about">about</a>
           </li>
           <li>
-            <a class="scroll" href="#speakers">speakers</a>
+            <a href="#speakers">speakers</a>
           </li>
           <li>
-            <a class="scroll" href="#venues">venues</a>
+            <a href="#venues">venues</a>
           </li>
           <li>
-            <a class="scroll" href="#past-editions">past editions</a>
+            <a href="#past-editions">past editions</a>
           </li>
           <li>
-            <a class="scroll" href="#blog">blog</a>
+            <a href="#blog">blog</a>
           </li>
         </ul>
       </nav>
@@ -56,18 +59,18 @@
   </div>
   <div class="topbar cb-nav" id="main-nav">
     <div class="ink-grid">
-      <nav class="ink-navigation">
+      <nav class="ink-navigation spy-nav">
         <ul class="menu horizontal hide-all show-s" id="main-nav-mobile">
           <li><a href="#" id="snap-toggler"><i class="icon-reorder"></i></a></li>
-          <li><h1>CODEBITS</h1></li>
+          <li><h1><a href="#intro">CODEBITS</h1></a></li>                    
         </ul>
         <ul class="menu horizontal hide-s" id="main-nav">
-          <li><h1><a class="scroll" href="#intro">CODEBITS</h1></a></li>                    
-          <li><a class="scroll" href="#about">about</a></li>
-          <li><a class="scroll" href="#speakers">speakers</a></li>
-          <li><a class="scroll" href="#venues">venues</a></li>
-          <li><a class="scroll" href="#past-editions">past editions</a></li>
-          <li><a class="scroll" href="#blog">blog</a></li>
+          <li><h1><a href="#intro">CODEBITS</h1></a></li>                    
+          <li><a href="#about">about</a></li>
+          <li><a href="#speakers">speakers</a></li>
+          <li><a href="#venues">venues</a></li>
+          <li><a href="#past-editions">past editions</a></li>
+          <li><a href="#blog">blog</a></li>
         </ul>
       </nav>
     </div>
@@ -127,43 +130,13 @@
           <div class="l-50 m-50 s-100">
             <div class="cgroup gutters">
               <div class="l-50 m-50 s-50 speaker-avatar">
-                <div class="">
-                  <img src="img/speaker.png" alt="">
-                </div>
+                <img src="img/speaker.png" alt="">
               </div>
               <div class="l-50 m-50 s-50 speaker-info">
-                <div>
-                  <h2>Celso Martinho</h2>
-                  <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="l-50 m-50 s-100">
-            <div class="cgroup gutters">
-              <div class="l-50 m-50 s-50 speaker-avatar">
-                <div class="">
-                  <img src="img/speaker.png" alt="">
-                </div>
-              </div>
-              <div class="l-50 m-50 s-50 speaker-info">
-                <div>
-                  <h2>Celso Martinho</h2>
-                  <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="l-50 m-50 s-100">
-            <div class="cgroup gutters">
-              <div class="l-50 m-50 s-50 speaker-avatar">
-                  <img src="img/speaker.png" alt="">
-              </div>
-              <div class="l-50 m-50 s-50 speaker-info">
-                <div class="bof">
-                  <div>
+                <div class="tr">
+                  <div class="td">
                     <h2>Celso Martinho</h2>
-                  <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                    <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
                   </div>
                 </div>
               </div>
@@ -172,14 +145,74 @@
           <div class="l-50 m-50 s-100">
             <div class="cgroup gutters">
               <div class="l-50 m-50 s-50 speaker-avatar">
-                <div class="">
-                  <img src="img/speaker.png" alt="">
-                </div>
+                <img src="img/speaker.png" alt="">
               </div>
               <div class="l-50 m-50 s-50 speaker-info">
-                <div>
-                  <h2>Celso Martinho</h2>
-                  <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                <div class="tr">
+                  <div class="td">
+                    <h2>Celso Martinho</h2>
+                    <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-50 m-50 s-100">
+            <div class="cgroup gutters">
+              <div class="l-50 m-50 s-50 speaker-avatar">
+                <img src="img/speaker.png" alt="">
+              </div>
+              <div class="l-50 m-50 s-50 speaker-info">
+                <div class="tr">
+                  <div class="td">
+                    <h2>Celso Martinho</h2>
+                    <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-50 m-50 s-100">
+            <div class="cgroup gutters">
+              <div class="l-50 m-50 s-50 speaker-avatar">
+                <img src="img/speaker.png" alt="">
+              </div>
+              <div class="l-50 m-50 s-50 speaker-info">
+                <div class="tr">
+                  <div class="td">
+                    <h2>Celso Martinho</h2>
+                    <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-50 m-50 s-100">
+            <div class="cgroup gutters">
+              <div class="l-50 m-50 s-50 speaker-avatar">
+                <img src="img/speaker.png" alt="">
+              </div>
+              <div class="l-50 m-50 s-50 speaker-info">
+                <div class="tr">
+                  <div class="td">
+                    <h2>Celso Martinho</h2>
+                    <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-50 m-50 s-100">
+            <div class="cgroup gutters">
+              <div class="l-50 m-50 s-50 speaker-avatar">
+                <img src="img/speaker.png" alt="">
+              </div>
+              <div class="l-50 m-50 s-50 speaker-info">
+                <div class="tr">
+                  <div class="td">
+                    <h2>Celso Martinho</h2>
+                    <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -203,8 +236,7 @@
       </h1>                
     </div></section>
   </div>
-  <script type="text/javascript" src="js/cb2014.js">
-  </script>
+  <script type="text/javascript" src="js/cb2014.js"></script>
 </body>
 
 </html>

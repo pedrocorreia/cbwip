@@ -1,3 +1,4 @@
+// (function(){
 var snapper = new Snap({
     element: document.getElementById('content'),
     dragger: null,
@@ -31,9 +32,14 @@ window.addEventListener('load',function(){
 });
 window.addEventListener('resize', function(){
     if (window.innerWidth >= 650) {
-        snapper.disable();
-        snapper.close();
+        if( snapper.state().state=="open" ){ 
+            snapper.close();
+            snapper.disable();
+        } else {
+            snapper.disable();
+        }
     } else {
         snapper.enable();
     }
 });
+// });

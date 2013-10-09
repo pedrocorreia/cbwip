@@ -16,279 +16,195 @@
   <link rel="apple-touch-icon-precomposed" href="../img/touch-icon.57.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch-icon.72.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch-icon.114.png">
-  <link rel="apple-touch-startup-image" href="../img/splash.320x460.png"
-  media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
-  <link rel="apple-touch-startup-image" href="../img/splash.768x1004.png"
-  media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
-  <link rel="apple-touch-startup-image" href="../img/splash.1024x748.png"
-  media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+  <link rel="apple-touch-startup-image" href="../img/splash.320x460.png" media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
+  <link rel="apple-touch-startup-image" href="../img/splash.768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+  <link rel="apple-touch-startup-image" href="../img/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
   <link rel="stylesheet" type="text/css" href="css/codebits2014.css">
-        <!--[if IE 7 ]>
-            <link rel="stylesheet" href="../css/ink-ie7.css" type="text/css" media="screen"
-            title="no title" charset="utf-8">
-            <![endif]-->
-            <script type="text/javascript" src="js/modernizr.js">
-            </script>
-            <script type="text/javascript" src="js/snap.js">
-            </script>
-          </head>
+  <!--[if IE 7 ]>
+  <link rel="stylesheet" href="../css/ink-ie7.css" type="text/css" media="screen"
+  title="no title" charset="utf-8">
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/snap.js"></script>
+  <script type="text/javascript" src="js/smooth.js"></script>
+</head>
 
-          <body>
-            <div class="snap-drawers hide-m hide-l">
-              <div class="snap-drawer snap-drawer-left" id="side-nav">
-                <h1>CODEBITS<span class="tagline">2014</span></h1>
-                <nav class="ink-navigation">
-                  <ul class="menu vertical">
-                    <li>
-                      <a href="#about">about</a>
-                    </li>
-                    <li>
-                      <a href="#speakers">speakers</a>
-                    </li>
-                    <li>
-                      <a href="#venues">venues</a>
-                    </li>
-                    <li>
-                      <a href="#past-editions">past editions</a>
-                    </li>
-                    <li>
-                      <a href="#blog">blog</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+<body>
+  <div class="snap-drawers hide-m hide-l cb-nav">
+    <div class="snap-drawer snap-drawer-left" id="side-nav">
+      <h1>CODEBITS<span class="tagline">2014</span></h1>
+      <nav class="ink-navigation">
+        <ul class="menu vertical">
+          <li>
+            <a class="scroll" href="#about">about</a>
+          </li>
+          <li>
+            <a class="scroll" href="#speakers">speakers</a>
+          </li>
+          <li>
+            <a class="scroll" href="#venues">venues</a>
+          </li>
+          <li>
+            <a class="scroll" href="#past-editions">past editions</a>
+          </li>
+          <li>
+            <a class="scroll" href="#blog">blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="topbar cb-nav" id="main-nav">
+    <div class="ink-grid">
+      <nav class="ink-navigation">
+        <ul class="menu horizontal hide-all show-s" id="main-nav-mobile">
+          <li><a href="#" id="snap-toggler"><i class="icon-reorder"></i></a></li>
+          <li><h1>CODEBITS</h1></li>
+        </ul>
+        <ul class="menu horizontal hide-s" id="main-nav">
+          <li><h1><a class="scroll" href="#intro">CODEBITS</h1></a></li>                    
+          <li><a class="scroll" href="#about">about</a></li>
+          <li><a class="scroll" href="#speakers">speakers</a></li>
+          <li><a class="scroll" href="#venues">venues</a></li>
+          <li><a class="scroll" href="#past-editions">past editions</a></li>
+          <li><a class="scroll" href="#blog">blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="topbar">
+    <nav class="ink-navigation snap-content">
+      <ul class="menu horizontal hide-all show-s" id="main-nav-mobile">
+        <li><a href="#" id="snap-toggler"><i class="icon-reorder"></i></a></li>
+      </ul>
+    </div>
+    <div class="snap-content" id="content">
+      <section class="vertical-padding" id="intro">
+        <div class="ink-grid">
+          <h1>SOMETHING, SOMETHING</h1>
+          <p class="align-center half-top-space">
+          </p>
+        </div> 
+      </section>
+      <section class="vertical-padding" id="about">
+        <div class="ink-grid">
+          <h1 class="half-bottom-space s-align-left">WHAT’S THIS ALL ABOUT, THEN?</h1>
+          <div class="cgroup gutters">
+            <div class="l-33 m-33 s-100">
+              <h2>participate</h2>
+              <p class="small-border-bottom s-bottom-padding">It’s a group of 800 geeks in each venue, for 3 days of non-stop tech and a 48-hour programming competiton.</p>
             </div>
-            <div class="topbar" id="cena">
-              <div class="ink-grid">
-                <nav class="ink-navigation">
-                  <ul class="menu horizontal hide-all show-s" id="main-nav-mobile">
-                    <li><a href="#" id="snap-toggler"><i class="icon-reorder"></i></a></li>
-                  </ul>
-                  <ul class="menu horizontal hide-s" id="main-nav">
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#speakers">speakers</a></li>
-                    <li><a href="#venues">venues</a></li>
-                    <li><a href="#past-editions">past editions</a></li>
-                    <li><a href="#blog">blog</a></li>
-                  </ul>
-                </nav>
-              </div>
+            <div class="l-33 m-33 s-100">
+              <h2>LEARN</h2>
+              <p class="small-border-bottom s-bottom-padding">It’s great talks, from soft to hardware and everything in between, given by famous heavyweights or... you!</p>
             </div>
-            <div class="topbar">
-              <nav class="ink-navigation snap-content">
-                <ul class="menu horizontal hide-all show-s" id="main-nav-mobile">
-                  <li><a href="#" id="snap-toggler"><i class="icon-reorder"></i></a></li>
-                </ul>
-              </div>
-              <div class="snap-content" id="content">
-                <section class="vertical-padding" id="intro">
-                  <div class="ink-grid">
-                    <h1>SOMETHING, SOMETHING</h1>
-                    <p class="align-center half-top-space">
-                      <!-- <a href="#" class="cb-button white huge">SIGN UP NOW</a> -->
-                      <!-- <a href="#" class="cb-button white l">SIGN UP NOW</a> -->
-                      <a href="#" class="cb-button white">SIGN UP NOW</a>
-                      <!-- <a href="#" class="cb-button white s">SIGN UP NOW</a> -->
-                      <!-- <a href="#" class="cb-button white tiny">SIGN UP NOW</a> -->
-                    </p>
-                  </div> 
-                </section>
-                <section class="vertical-padding" id="about">
-                  <div class="ink-grid">
-                    <h1 class="half-bottom-space s-align-left">WHAT’S THIS ALL ABOUT, THEN?</h1>
-                    <div class="column-group gutters">
-                      <div class="l-33 m-33 s-100">
-                        <h2>participate</h2>
-                        <p class="s-border-bottom s-bottom-padding">It’s a group of 800 geeks in each venue, for 3 days of non-stop tech and a 48-hour programming competiton.</p>
-                      </div>
-                      <div class="l-33 m-33 s-100">
-                        <h2>LEARN</h2>
-                        <p class="s-border-bottom s-bottom-padding">It’s great talks, from soft to hardware and everything in between, given by famous heavyweights or... you!</p>
-                      </div>
-                      <div class="l-33 m-33 s-100">
-                        <h2>EXPERIMENT</h2>
-                        <p class="s-border-bottom s-bottom-padding">It’s hours of workshops so you can get your hands dirty, be it writing code or soldering components to build a robot.</p>
-                      </div>
-                    </div>
-                    <div class="column-group gutters">
-                                            <div class="l-33 m-33 s-100">
-                        <h2>BUILD</h2>
-<p class="s-border-bottom s-bottom-padding">It’s lots of hardware demos, 3D printing, arduinos, robots and all sorts of gadgets, because open hardware is here now!</p>
-                      </div>
-                      <div class="l-33 m-33 s-100">
-                        <h2>PLAY</h2>
-<p class="s-border-bottom s-bottom-padding">It’s a quiz show, a security competition, surprise games, weird culinary experiments and all sorts of geeky fun.</p>
-                      </div>
-                      <div class="l-33 m-33 s-100">
-                        <h2>ENJOY</h2>
-<p class="s-border-bottom s-bottom-padding">It’s free. Food, network, sleep over. It’s new friends, new knowledge and an totally unforgettable experience.</p>
-                    </div>
-                  </div>
+            <div class="l-33 m-33 s-100">
+              <h2>EXPERIMENT</h2>
+              <p class="small-border-bottom s-bottom-padding">It’s hours of workshops so you can get your hands dirty, be it writing code or soldering components to build a robot.</p>
+            </div>
+          </div>
+          <div class="cgroup gutters">
+            <div class="l-33 m-33 s-100">
+              <h2>BUILD</h2>
+              <p class="small-border-bottom s-bottom-padding">It’s lots of hardware demos, 3D printing, arduinos, robots and all sorts of gadgets, because open hardware is here now!</p>
+            </div>
+            <div class="l-33 m-33 s-100">
+              <h2>PLAY</h2>
+              <p class="small-border-bottom s-bottom-padding">It’s a quiz show, a security competition, surprise games, weird culinary experiments and all sorts of geeky fun.</p>
+            </div>
+            <div class="l-33 m-33 s-100">
+              <h2>ENJOY</h2>
+              <p>It’s free. Food, network, sleep over. It’s new friends, new knowledge and an totally unforgettable experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="vertical-padding" id="speakers"><div class="ink-grid">
+        <h1>
+          Who's going to be talking?
+        </h1>
+        <div class="cgroup gutters top-space">
+          <div class="l-50 m-50 s-100">
+            <div class="cgroup gutters">
+              <div class="l-50 m-50 s-50 speaker-avatar">
+                <div class="">
+                  <img src="img/speaker.png" alt="">
                 </div>
-              </section>
-              <section class="vertical-padding" id="speakers"><div class="ink-grid">
-                <h1>
-                  Who's going to be talking?
-                </h1>
-                <div class="column-group gutters top-space">
-                  <div class="l-25 m-25 s-100">
-                    <div class="speaker-avatar">
-                      <span class="speaker-info">Celso Martinho</span>
-                      <img src="img/speaker.png" alt="">
-                    </div>
-                  </div>
-                  <div class="l-25 m-25 s-100">
-                    <div class="speaker-avatar">
-                      <img src="img/speaker.png" alt="">
-                    </div>
-                  </div>
-                  <div class="l-25 m-25 s-100">
-                    <div class="speaker-avatar">
-                      <img src="img/speaker.png" alt="">
-                    </div>
-                  </div>
-                  <div class="l-25 m-25 s-100">
-                    <div class="speaker-avatar">
-                      <img src="img/speaker.png" alt="">
-                    </div>
-                  </div>
-                  <div class="l-25 m-25 s-100">
-                    <div class="speaker-avatar">
-                      <img src="img/speaker.png" alt="">
-                    </div>
-                  </div>
-                  <div class="l-25 m-25 s-100">
-                    <div class="speaker-avatar">
-                      <img src="img/speaker.png" alt="">
-                    </div>
-                  </div>
-                  <div class="l-25 m-25 s-100">
-                    <div class="speaker-avatar">
-                      <img src="img/speaker.png" alt="">
-                    </div>
-                  </div>
-                  <div class="l-25 m-25 s-100">
-                    <div class="speaker-avatar">
-                      <img src="img/speaker.png" alt="">
-                    </div>
+              </div>
+              <div class="l-50 m-50 s-50 speaker-info">
+                <div>
+                  <h2>Celso Martinho</h2>
+                  <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-50 m-50 s-100">
+            <div class="cgroup gutters">
+              <div class="l-50 m-50 s-50 speaker-avatar">
+                <div class="">
+                  <img src="img/speaker.png" alt="">
+                </div>
+              </div>
+              <div class="l-50 m-50 s-50 speaker-info">
+                <div>
+                  <h2>Celso Martinho</h2>
+                  <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-50 m-50 s-100">
+            <div class="cgroup gutters">
+              <div class="l-50 m-50 s-50 speaker-avatar">
+                  <img src="img/speaker.png" alt="">
+              </div>
+              <div class="l-50 m-50 s-50 speaker-info">
+                <div class="bof">
+                  <div>
+                    <h2>Celso Martinho</h2>
+                  <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
                   </div>
                 </div>
               </div>
-            </section>
-              <section class="vertical-padding" id="venues"><div class="ink-grid">
-                <h1>
-                  Where is it going to be?
-                </h1>
-              </div></section>
-              <section class="vertical-padding" id="past-editions"><div class="ink-grid">
-                <h1>
-                  past-editions
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div></section>
-              <section class="vertical-padding" id="blog"><div class="ink-grid">
-                <h1>
-                  blog
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div></section>
             </div>
-            <script type="text/javascript" src="js/cb2014.js">
-            </script>
-          </body>
+          </div>
+          <div class="l-50 m-50 s-100">
+            <div class="cgroup gutters">
+              <div class="l-50 m-50 s-50 speaker-avatar">
+                <div class="">
+                  <img src="img/speaker.png" alt="">
+                </div>
+              </div>
+              <div class="l-50 m-50 s-50 speaker-info">
+                <div>
+                  <h2>Celso Martinho</h2>
+                  <p>In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vertical-padding" id="venues"><div class="ink-grid">
+      <h1>
+        Where is it going to be?
+      </h1>
+    </div></section>
+    <section class="vertical-padding" id="past-editions"><div class="ink-grid">
+      <h1>
+        past-editions
+      </h1>
+    </div></section>
+    <section class="vertical-padding" id="blog"><div class="ink-grid">
+      <h1>
+        blog
+      </h1>                
+    </div></section>
+  </div>
+  <script type="text/javascript" src="js/cb2014.js">
+  </script>
+</body>
 
-          </html>
+</html>

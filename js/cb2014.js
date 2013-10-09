@@ -14,7 +14,7 @@ var snapper = new Snap({
     touchToDrag: true,
     slideIntent: 40,
     minDragDistance: 5,
-    additionalElements: ['cena'],
+    additionalElements: ['main-nav'],
 });
 
 document.getElementById("snap-toggler").addEventListener('click', function(){

@@ -58,11 +58,34 @@ body {
     left: 0;
     width: 100%;
     z-index: 10;
+
+    .ink-navigation {
+      ul.menu li {
+          h1 {
+            font-size: 1.8em;
+            margin-right: 0.5em;
+
+          a {
+            color: @white;
+            line-height: 1.5 !important;
+            padding: 0;
+            margin: 0;
+            &:hover {
+              color: @red;
+            }
+          }
+          
+          span.tagline {
+            .fw-light;
+            font-size: 0.45em;
+            margin-left: 0.1em;
+          }
+        }
+      }
+    }
 }
 
-#main-nav, 
-#main-nav-mobile,
-#side-nav {
+.cb-nav {
   a {
     color: @main-nav-color;
     text-transform: uppercase;
@@ -141,26 +164,20 @@ div.speaker-avatar {
       #ink > #shadows > .box-shadow (0px,0px,4px,1px,fade(darken(@red,60%),50%));    
       text-decoration: none;      
     }
-    &:hover {
-      .speaker-info {
-        display: block;
+  }
+}
+
+div.speaker-info {
+  position: relative;
+  display: table;
+    .bof {
+      display: table-row;
+      div {
+        display: table-cell;
+        vertical-align: middle;
       }
     }
   }
-  .speaker-info {
-    width: 85%;
-    height: 98%;
-    background: fade(@black,60%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    #ink > #border-radius > .all (50% 50%);
-    line-height: 216px;
-  }
-}
 
 section {
   h1 {
@@ -198,7 +215,16 @@ section {
   .snap-content {
     margin-top: 2.5em;
   }
-  .small-border-bottom {
-    border-bottom: 1px fade(@black,20%) solid;
+  #about {
+    p {
+       border-bottom: 1px fade(@black,20%) solid;  
+    }
+    div.l-33.m-33.s-100 {
+      &:last-child {
+        p {
+          border-bottom: none;
+        }
+      }
+    }
   }
 }

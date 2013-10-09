@@ -48,12 +48,22 @@ window.addEventListener('resize', function(){
 });
 
 (function(){
-    window.addEventListener('resize',function(){
+
+    function speakerInfo() {
         var tds = Ink.ss('.td');
         for ( var i=0; i < tds.length; i++ ) {
             var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
             var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
             tds[i].style.height = avatarHeight + 'px';
         }
+    }
+
+    window.addEventListener('resize',function(){
+        speakerInfo();
     });
+
+    window.addEventListener('load',function(){
+        speakerInfo();
+    });
+
 }).call(this, window, document);

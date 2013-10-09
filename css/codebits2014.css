@@ -6362,6 +6362,9 @@ section#speakers {
   background: #c31228;
   color: #ffffff;
 }
+section#speakers a {
+  color: #ffffff;
+}
 section#venues {
   background: #e37537;
 }

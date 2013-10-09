@@ -59,11 +59,16 @@ window.addEventListener('resize', function(){
     }
 
     window.addEventListener('resize',function(){
-        speakerInfo();
+        if (window.innerWidth >= 650) {
+            speakerInfo();
+        }
+        
     });
 
     window.addEventListener('load',function(){
-        speakerInfo();
+        if (window.innerWidth >= 650) {
+            speakerInfo();
+        }
     });
 
 }).call(this, window, document);

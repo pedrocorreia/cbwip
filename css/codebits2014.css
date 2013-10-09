@@ -6368,6 +6368,9 @@ section#speakers a {
 section#venues {
   background: #e37537;
 }
+section#venues h1 {
+  color: #ffffff;
+}
 .cb-button {
   padding: 1em 1.5em;
   border-radius: 3px;
@@ -6417,7 +6420,6 @@ div.speaker-info .tr {
 div.speaker-info .tr .td {
   display: table-cell;
   vertical-align: middle;
-  height: 196px;
 }
 section h1 {
   text-transform: uppercase;

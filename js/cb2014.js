@@ -12,7 +12,7 @@ var snapper = new Snap({
     maxPosition: 266,
     minPosition: -266,
     tapToClose: true,
-    touchToDrag: true,
+    touchToDrag: false,
     slideIntent: 40,
     minDragDistance: 5,
     additionalElements: ['main-nav'],
@@ -41,26 +41,32 @@ window.addEventListener('resize', function(){
     } else {
         snapper.enable();
     }
-
-
-
-
 });
 
 (function(){
 
-    function speakerInfo() {
+    function speakerInfo(reset) {
         var tds = Ink.ss('.td');
-        for ( var i=0; i < tds.length; i++ ) {
-            var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
-            var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
-            tds[i].style.height = avatarHeight + 'px';
+        if(reset === true) {
+            for ( var i=0; i < tds.length; i++ ) {
+                var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
+                var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
+                tds[i].removeAttribute('style');
+            } 
+        } else {
+            for ( var i=0; i < tds.length; i++ ) {
+                var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
+                var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
+                tds[i].style.height = avatarHeight + 'px';
+            }
         }
     }
 
     window.addEventListener('resize',function(){
         if (window.innerWidth >= 650) {
             speakerInfo();
+        } else {
+            speakerInfo(true);
         }
         
     });
@@ -68,6 +74,8 @@ window.addEventListener('resize', function(){
     window.addEventListener('load',function(){
         if (window.innerWidth >= 650) {
             speakerInfo();
+        } else {
+            speakerInfo(true);
         }
     });
 

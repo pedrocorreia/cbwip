@@ -588,9 +588,6 @@ body.animated *[class*="l-"] {
 [class*="l-"]:empty:after {
   content: "\00a0";
 }
-*[class*="l-"] > *[class*="l-"] {
-  margin-left: 0;
-}
 .l-push-left {
   float: left;
 }
@@ -1103,9 +1100,6 @@ body.animated *[class*="l-"] {
   [class*="m-"]:empty:after {
     content: "\00a0";
   }
-  *[class*="m-"] > *[class*="m-"] {
-    margin-left: 0;
-  }
   .m-push-left {
     float: left;
   }
@@ -1616,9 +1610,6 @@ body.animated *[class*="l-"] {
   }
   [class*="s-"]:empty:after {
     content: "\00a0";
-  }
-  *[class*="s-"] > *[class*="s-"] {
-    margin-left: 0;
   }
   .s-push-left {
     float: left;
@@ -6170,7 +6161,6 @@ body {
   overflow: hidden;
 }
 .snap-content {
-  background: white;
   position: absolute;
   top: 0;
   right: 0;
@@ -6303,6 +6293,7 @@ body {
 body {
   font-family: "museosans-300";
   color: #1b1b1b;
+  background: #1b1b1b;
   font-size: 18px;
 }
 .topbar {
@@ -6349,26 +6340,48 @@ body {
   font-size: 0.45em;
   margin-left: 0.1em;
 }
-#main-nav li a:first-child {
+#main-nav li:first-child a {
   padding-left: 0;
 }
-section#intro {
+#main-nav li a i.icon-chevron-down {
+  margin-left: 0.4em;
+}
+#main-nav ul.submenu {
+  min-width: 12em;
+  top: 2.6em;
+}
+#main-nav ul.submenu li {
+  background: #1b1b1b;
+}
+#main-nav ul.submenu li a {
+  padding: 0.5em 1em;
+}
+#main-nav ul.submenu li a:hover {
+  background: none;
+}
+section#intro,
+div#intro {
   background: #54b948;
 }
-section#about {
+section#about,
+div#about {
   background: #e5be21;
 }
-section#speakers {
+section#speakers,
+div#speakers {
   background: #c31228;
   color: #ffffff;
 }
-section#speakers a {
+section#speakers a,
+div#speakers a {
   color: #ffffff;
 }
-section#venues {
+section#venues,
+div#venues {
   background: #e37537;
 }
-section#venues h1 {
+section#venues h1,
+div#venues h1 {
   color: #ffffff;
 }
 .cb-button {
@@ -6445,6 +6458,9 @@ section p + p {
 @media screen and (min-width: 650px) and (max-width: 959px) {
   .snap-content {
     margin-top: 2.5em;
+  }
+  .medium-border-bottom {
+    border-bottom: 1px rgba(27, 27, 27, 0.2) solid;
   }
 }
 /* SMALL SCREENS */

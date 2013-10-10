@@ -49,6 +49,7 @@
 body {
   .fw-thin;
   color: @black;
+  background: @black;
   font-size: 18px;
  }
 
@@ -112,15 +113,33 @@ body {
 
 #main-nav {
   li {
-    a {
-      &:first-child {
+    &:first-child {
+      a {
         padding-left: 0;
+      }
+    }
+    a {
+      i.icon-chevron-down {
+        margin-left: 0.4em;
+      }
+    }
+  }
+  ul.submenu {
+    min-width: 12em;
+    top: 2.6em;   
+    li {
+      background: @black;
+      a {
+        padding: @navigation-padding;
+        &:hover {
+          background: none;
+        }
       }
     }
   }
 }
 
-section {
+section, div {
   &#intro { background: @green; }
   &#about { background: @yellow;  }
   &#speakers { background: @red; color: @white; a { color: @white; } }
@@ -209,6 +228,9 @@ section {
 @media screen and (min-width: 650px) and (max-width: 959px) {
  .snap-content {
     margin-top: 2.5em;
+  }
+  .medium-border-bottom {
+    border-bottom: 1px fade(@black,20%) solid;  
   }
 }
 

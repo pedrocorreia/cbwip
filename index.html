@@ -55,22 +55,58 @@
         </ul>
       </nav>
     </div>
+    <div class="snap-drawer snap-drawer-right" id="user-side-nav">
+      <h1><a href="#intro">CODEBITS</h1></a></li>                          
+      <nav class="ink-navigation">
+        <ul class="menu vertical">
+          <li>
+            <a href="#">Your page</a>
+          </li>
+          <li>
+            <a href="#">Badges quest</a>
+          </li>
+          <li>
+            <a href="#">Change photo</a>
+          </li>
+          <li>
+            <a href="#">Manage friends</a>
+          </li>
+          <li>
+            <a href="#">User search</a>
+          </li>
+          <li>
+            <a href="#">Change password</a>
+          </li>
+          <li>
+            <a href="#">Change email</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
   <div class="topbar cb-nav" id="main-nav">
     <div class="ink-grid">
       <nav class="ink-navigation spy-nav">
-        <ul class="menu horizontal hide-all show-s" id="main-nav-mobile">
-          <li><a href="#" id="snap-toggler"><i class="icon-reorder"></i></a></li>
+        <ul class="menu horizontal hide-all show-s push-left" id="main-nav-mobile">
+          <li><a href="#" id="main-toggler"><i class="icon-reorder"></i></a></li>
         </ul>
-        <ul class="menu horizontal hide-s" id="main-nav">
+        <ul class="menu horizontal hide-all show-s push-right" id="main-nav-mobile">
+          <li><a href="#" id="user-toggler"><i class="icon-user"></i></a></li>
+        </ul>
+        <ul class="menu horizontal hide-s push-left" id="main-nav">
           <li><a class="scrollableLink" href="#about">about</a></li>
           <li><a class="scrollableLink" href="#speakers">speakers</a></li>
           <li><a class="scrollableLink" href="#venues">venues</a></li>
           <li><a class="scrollableLink" href="#past-editions">past editions</a></li>
-          <li><a class="scrollableLink" href="#blog">blog</a></li>
-          <li class="push-right">
+          <li><a class="scrollableLink" href="#blog">blog</a></li>          
+        </ul>
+        <ul class="menu horizontal hide-s push-right">
+          <li class="" id="user-nav">
+            <a href="#"><i class="icon-cog"></i></a>
+          </li>          
+          <li class="" id="user-nav">
             <a href="#">User zone<i class="icon-chevron-down"></i></a>
-            <ul class="submenu" id="user-nav">
+            <ul class="submenu">
               <li>
                 <a href="#">Your page</a>
                 <a href="#">Badges quest</a>
@@ -79,6 +115,28 @@
                 <a href="#">User search</a>
                 <a href="#">Change password</a>
                 <a href="#">Change email</a>
+              </li>
+            </ul>
+          </li>
+          <li class="hide-all " id="user-nav">
+            <a href="#">LOGIN<i class="icon-chevron-down"></i></a>
+            <ul class="submenu">
+              <li>
+                <form action="#" class="ink-form login">
+                  <fieldset>
+                      <div class="control-group">
+                          <label for="username">Username</label> 
+                          <div class="control">
+                              <input id="username" type="text" placeholder="Username">
+                          </div>
+                          <div class="control quarter-top-space">
+                            <label for="password">Password</label> 
+                            <input id="password" type="password" placeholder="Password">
+                          </div>
+                          <input type="submit" class="cb-button white tiny top-space" value="LOGIN">
+                      </div>
+                  </fieldset>
+                </form>                
               </li>
             </ul>
           </li>
@@ -91,7 +149,7 @@
         <div class="ink-grid">
           <h1 class="align-center">SOMETHING, SOMETHING</h1>
           <div class="cgroup top-space">
-            <div class="l-30 m-30 s-70 push-center">
+            <div class="l-30 m-30 s-40 push-center">
               <img src="img/bot.svg" alt="">
             </div>
           </div>
@@ -146,7 +204,7 @@
                 <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
                   <img src="img/speaker.png" alt="">
                 </div>
-                <div class="l-50 m-60 s-100 speaker-info s-align-center">
+                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
                   <div class="tr">
                     <div class="td">
                       <h2>Celso Martinho</h2>
@@ -164,7 +222,7 @@
                 <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
                   <img src="img/speaker.png" alt="">
                 </div>
-                <div class="l-50 m-60 s-100 speaker-info s-align-center">
+                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
                   <div class="tr">
                     <div class="td">
                       <h2>Celso Martinho</h2>
@@ -184,7 +242,7 @@
                 <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
                   <img src="img/speaker.png" alt="">
                 </div>
-                <div class="l-50 m-60 s-100 speaker-info s-align-center">
+                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
                   <div class="tr">
                     <div class="td">
                       <h2>Celso Martinho</h2>
@@ -202,7 +260,7 @@
                 <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
                   <img src="img/speaker.png" alt="">
                 </div>
-                <div class="l-50 m-60 s-100 speaker-info s-align-center">
+                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
                   <div class="tr">
                     <div class="td">
                       <h2>Celso Martinho</h2>
@@ -222,7 +280,7 @@
                 <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
                   <img src="img/speaker.png" alt="">
                 </div>
-                <div class="l-50 m-60 s-100 speaker-info s-align-center">
+                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
                   <div class="tr">
                     <div class="td">
                       <h2>Celso Martinho</h2>
@@ -235,12 +293,12 @@
             </div>
           </div>
           <div class="l-50 m-100 s-100">
-            <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
+            <div class="l-half-top-padding">
               <div class="cgroup horizontal-gutters">
                 <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
                   <img src="img/speaker.png" alt="">
                 </div>
-                <div class="l-50 m-60 s-100 speaker-info s-align-center">
+                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
                   <div class="tr">
                     <div class="td">
                       <h2>Celso Martinho</h2>

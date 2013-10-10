@@ -113,11 +113,9 @@ body {
 
 #main-nav {
   li {
-    &:first-child {
       a {
         padding-left: 0;
       }
-    }
     a {
       i.icon-chevron-down {
         margin-left: 0.4em;
@@ -126,10 +124,13 @@ body {
   }
   ul.submenu {
     min-width: 12em;
-    top: 2.6em;   
+    top: 2.6em;
+    right: 0;
+    left: auto;
     li {
       background: @black;
       a {
+        border-bottom: 1px solid rgba(255,255,255, 0.1);
         padding: @navigation-padding;
         &:hover {
           background: none;
@@ -148,9 +149,26 @@ section, div {
   // &#blog { background: ; }
 }
 
+form.login {
+  padding: 1em 1em 0 1em ; 
+  font-size: 0.9em;
+  color: white;
+  label {
+    color: @green;
+    text-transform: uppercase;
+  }
+  .control-group {
+    margin-bottom: 0;
+    .cb-button {
+      width: 100%;
+    }
+  }
+}
+
 .cb-button {
   padding: 1em 1.5em;
   #ink > #border-radius > .all (3px);
+  border:none;
   &.huge {
     font-size: 1.5em;
   }
@@ -179,7 +197,9 @@ div.speaker-avatar {
   overflow: hidden;
   img {
     #ink > #border-radius > .all (50% 50%);
-    border: 10px @white solid;
+    #ink > #shadows > .box-shadow (0px,-2px,4px,1px,fade(darken(@red,60%),50%),inset);    
+
+    border: 15px @white solid;
     &:hover {
       #ink > #shadows > .box-shadow (0px,0px,4px,1px,fade(darken(@red,60%),50%));    
       text-decoration: none;      

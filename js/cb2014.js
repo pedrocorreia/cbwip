@@ -2,7 +2,7 @@
 var snapper = new Snap({
     element: document.getElementById('content'),
     dragger: null,
-    disable: 'right',
+    disable: 'none',
     addBodyClasses: true,
     hyperextensible: false,
     resistance: 0.5,
@@ -18,11 +18,18 @@ var snapper = new Snap({
     additionalElements: ['main-nav'],
 });
 
-document.getElementById("snap-toggler").addEventListener('click', function(){
+document.getElementById("main-toggler").addEventListener('click', function(){
     if( snapper.state().state=="left" ){
         snapper.close();
     } else {
         snapper.open('left');
+    }
+});
+document.getElementById("user-toggler").addEventListener('click', function(){
+    if( snapper.state().state=="right" ){
+        snapper.close();
+    } else {
+        snapper.open('right');
     }
 });
 window.addEventListener('load',function(){

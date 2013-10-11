@@ -6308,6 +6308,14 @@ body {
   padding-top: 0.6em;
   padding-bottom: 0.3em;
 }
+a#main-toggler {
+  padding: 0.5em 1em;
+  padding-left: 0;
+}
+a#user-toggler {
+  padding: 0.5em 1em;
+  padding-right: 0;
+}
 .topbar {
   background: #1b1b1b;
   position: absolute;

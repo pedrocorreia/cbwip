@@ -6422,6 +6422,14 @@ section#venues h1,
 div#venues h1 {
   color: #ffffff;
 }
+section#past-editions,
+div#past-editions {
+  background: #ffffff;
+}
+section#blog,
+div#blog {
+  background: #ffffff;
+}
 form.login {
   padding: 1em 1em 0 1em ;
   font-size: 1em;

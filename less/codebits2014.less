@@ -68,6 +68,12 @@ body {
   }
 }
 
+.header-bot, .header-bubble {
+    margin-bottom: -1.3em !important; 
+  z-index: 100; 
+  position: relative;
+}
+
 #main-toggler, #user-toggler {
   line-height: @navigation-line-height;
   background: none;
@@ -185,7 +191,7 @@ section, div {
 
 form.login {
   padding: 1em 1em 0 1em ; 
-  font-size: 0.9em;
+  font-size: 1em;
   color: white;
   label {
     color: @green;
@@ -195,6 +201,7 @@ form.login {
     margin-bottom: 0;
     .cb-button {
       width: 100%;
+
     }
   }
 }

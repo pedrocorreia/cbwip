@@ -6308,6 +6308,12 @@ body {
   padding-top: 0.6em;
   padding-bottom: 0.3em;
 }
+.header-bot,
+.header-bubble {
+  margin-bottom: -1.3em !important;
+  z-index: 100;
+  position: relative;
+}
 #main-toggler,
 #user-toggler {
   line-height: 1.7;
@@ -6418,7 +6424,7 @@ div#venues h1 {
 }
 form.login {
   padding: 1em 1em 0 1em ;
-  font-size: 0.9em;
+  font-size: 1em;
   color: white;
 }
 form.login label {

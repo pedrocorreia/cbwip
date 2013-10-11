@@ -55,10 +55,12 @@
         </ul>
       </nav>
     </div>
-    <div class="snap-drawer snap-drawer-right" id="user-side-nav">
-      <h1><a href="#intro">CODEBITS</h1></a></li>                          
+    <div class="snap-drawer snap-drawer-right" id="user-side-nav">                              
       <nav class="ink-navigation">
-        <ul class="menu vertical">
+        <ul class="menu vertical hide-all">
+        <li>
+          <h2><a href="#intro">CODEBITS</h2></a></li>
+        </li>
           <li>
             <a href="#">Your page</a>
           </li>
@@ -82,6 +84,29 @@
           </li>
           <li>
             <a href="#">Logout</a>            
+          </li> 
+        </ul>
+        <ul class="menu">
+          <li>
+            <h2 >Login</h2>
+          </li>
+        </li>
+          <li>
+            <form action="#" class="ink-form login">
+              <fieldset>
+                <div class="control-group">
+                  <label for="username">Username</label> 
+                  <div class="control">
+                    <input id="username" type="email" placeholder="Username" required>
+                  </div>
+                  <div class="control quarter-top-space">
+                    <label for="password">Password</label> 
+                    <input id="password" type="password" placeholder="Password" required>
+                  </div>
+                  <input type="submit" class="cb-button white tiny top-space" value="LOGIN">
+                </div>
+              </fieldset>
+            </form>                
           </li>
         </ul>
       </nav>
@@ -92,270 +117,270 @@
       <nav class="ink-navigation spy-nav">
         <ul class="menu horizontal hide-all show-s push-left" id="main-nav-mobile">
           <li><button id="main-toggler"><i class="icon-reorder"></i></button>
-        </ul>
-        <ul class="menu horizontal hide-all show-s push-right" id="main-nav-mobile">
-          <li><button id="user-toggler"><i class="icon-user"></i></button>
-        </ul>
-        <ul class="menu horizontal hide-s push-left" id="main-nav">
-          <li><a class="scrollableLink" href="#about">about</a></li>
-          <li><a class="scrollableLink" href="#speakers">speakers</a></li>
-          <li><a class="scrollableLink" href="#venues">venues</a></li>
-          <li><a class="scrollableLink" href="#past-editions">past editions</a></li>
-          <li><a class="scrollableLink" href="#blog">blog</a></li>          
-        </ul>
-        <ul class="menu horizontal hide-s push-right">
-          <li class="" id="user-nav">
-            <a href="#"><i class="icon-cog"></i></a>
-          </li>          
-          <li class="" id="user-nav">
-            <a href="#">User zone<i class="icon-chevron-down"></i></a>
-            <ul class="submenu">
-              <li>
-                <a href="#">Your page</a>
-                <a href="#">Badges quest</a>
-                <a href="#">Change photo</a>
-                <a href="#">Manage friends</a>
-                <a href="#">User search</a>
-                <a href="#">Change password</a>
-                <a href="#">Change email</a>
-                <a href="#">Logout</a>
-              </li>
+          </ul>
+          <ul class="menu horizontal hide-all show-s push-right" id="main-nav-mobile">
+            <li><button id="user-toggler"><i class="icon-user"></i></button>
             </ul>
-          </li>
-          <li class="hide-all " id="user-nav">
-            <a href="#">LOGIN<i class="icon-chevron-down"></i></a>
-            <ul class="submenu">
-              <li>
-                <form action="#" class="ink-form login">
-                  <fieldset>
-                      <div class="control-group">
+            <ul class="menu horizontal hide-s push-left" id="main-nav">
+              <li><a class="scrollableLink" href="#about">about</a></li>
+              <li><a class="scrollableLink" href="#speakers">speakers</a></li>
+              <li><a class="scrollableLink" href="#venues">venues</a></li>
+              <li><a class="scrollableLink" href="#past-editions">past editions</a></li>
+              <li><a class="scrollableLink" href="#blog">blog</a></li>          
+            </ul>
+            <ul class="menu horizontal hide-s push-right">
+              <li class="" id="user-nav">
+                <a href="#"><i class="icon-cog"></i></a>
+              </li>          
+              <li class="hide-all" id="user-nav">
+                <a href="#">User zone<i class="icon-chevron-down"></i></a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">Your page</a>
+                    <a href="#">Badges quest</a>
+                    <a href="#">Change photo</a>
+                    <a href="#">Manage friends</a>
+                    <a href="#">User search</a>
+                    <a href="#">Change password</a>
+                    <a href="#">Change email</a>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="hide-s " id="login-nav">
+                <a href="#">LOGIN<i class="icon-chevron-down"></i></a>
+                <ul class="submenu">
+                  <li>
+                    <form action="#" class="ink-form login">
+                      <fieldset>
+                        <div class="control-group">
                           <label for="username">Username</label> 
                           <div class="control">
-                              <input id="username" type="text" placeholder="Username">
+                            <input id="username" type="email" placeholder="Username" required>
                           </div>
                           <div class="control quarter-top-space">
                             <label for="password">Password</label> 
-                            <input id="password" type="password" placeholder="Password">
+                            <input id="password" type="password" placeholder="Password" required>
                           </div>
                           <input type="submit" class="cb-button white tiny top-space" value="LOGIN">
-                      </div>
-                  </fieldset>
-                </form>                
+                        </div>
+                      </fieldset>
+                    </form>                
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-    <div class="snap-content" id="content">
-      <section class="vertical-padding" id="intro">
-        <div class="ink-grid">
-          <div class="cgroup top-space vertical-gutters">
-            <div class="l-45 m-70 s-100 push-center">
-              <div class="cgroup half-gutters">
-                <div class="l-30 m-30 s-30" style="margin-bottom: -1.2em; z-index: 100; position: relative;">
-                  <img src="img/watch-a-movie.svg" alt="watch a movie">                  
-                </div>
-                <div class="l-40 m-40 s-40" style="margin-bottom: -1.2em; z-index: 100; position: relative;">
-                  <img src="img/bot.svg" alt="watch a movie">
-                </div>
-              </div>
-              <div class="l-100 m-100 s-100 vertical-spacing logo bordered">
-                <img src="img/codebits.svg" alt="watch a movie">                
-              </div>
-              <div class="cgroup quarter-top-space">
-                <div class="l-33 m-33 s-100 s-align-center align-left fw-bold">LISBON 11-13</div>
-                <div class="l-33 m-33 s-100 s-align-center align-center fw-bold">MARCH 2014</div>
-                <div class="l-33 m-33 s-100 s-align-center align-right fw-bold">S. PAULO 12-14</div>
-              </div>
-            </div>
-            <div class="l-100 m-100 s-100 align-center">
-              <p class="large-txt white-txt">Join an elite of tech wizards for three non-stop days of talks,<br class="hide-s hide-m">
-workshops and competitions, for free in Lisbon and São Paulo.</p>
-            </div>
-            <div class="l-100 m-100 s-100 align-center">
-                  <p><a href="#" class="cb-button large white">SIGN UP NOW</a></p>
-                </div>
-          </div>
-        </div> 
-      </section>
-      <section class="vertical-padding" id="about">
-        <div class="ink-grid">
-          <h1 class="half-bottom-space align-center">WHAT’S THIS ALL ABOUT, THEN?</h1>
-          <div class="cgroup gutters">
-            <div class="l-33 m-33 s-100">
-              <h2>participate</h2>
-              <p class="small-border-bottom s-bottom-padding">It’s a group of 800 geeks in each venue, for 3 days of non-stop tech and a 48-hour programming competiton.</p>
-            </div>
-            <div class="l-33 m-33 s-100">
-              <h2>LEARN</h2>
-              <p class="small-border-bottom s-bottom-padding">It’s great talks, from soft to hardware and everything in between, given by famous heavyweights or... you!</p>
-            </div>
-            <div class="l-33 m-33 s-100">
-              <h2>EXPERIMENT</h2>
-              <p class="small-border-bottom s-bottom-padding">It’s hours of workshops so you can get your hands dirty, be it writing code or soldering components to build a robot.</p>
-            </div>
-          </div>
-          <div class="cgroup gutters">
-            <div class="l-33 m-33 s-100">
-              <h2>BUILD</h2>
-              <p class="small-border-bottom s-bottom-padding">It’s lots of hardware demos, 3D printing, arduinos, robots and all sorts of gadgets, because open hardware is here now!</p>
-            </div>
-            <div class="l-33 m-33 s-100">
-              <h2>PLAY</h2>
-              <p class="small-border-bottom s-bottom-padding">It’s a quiz show, a security competition, surprise games, weird culinary experiments and all sorts of geeky fun.</p>
-            </div>
-            <div class="l-33 m-33 s-100">
-              <h2>ENJOY</h2>
-              <p>It’s free. Food, network, sleep over. It’s new friends, new knowledge and an totally unforgettable experience.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="vertical-padding" id="speakers"><div class="ink-grid">
-        <h1 class="half-bottom-space s-align-center">
-          Who's going to be talking?
-        </h1>
-        <div class="cgroup horizontal-gutters">
-          <div class="l-50 m-100 s-100">  
-            <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
-              <div class="cgroup horizontal-gutters">
-                <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
-                  <img src="img/speaker.png" alt="">
-                </div>
-                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
-                  <div class="tr">
-                    <div class="td">
-                      <h2>Celso Martinho</h2>
-                      <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
-                      <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>       
-            </div>
-          </div>
-          <div class="l-50 m-100 s-100">
-            <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
-              <div class="cgroup horizontal-gutters">
-                <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
-                  <img src="img/speaker.png" alt="">
-                </div>
-                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
-                  <div class="tr">
-                    <div class="td">
-                      <h2>Celso Martinho</h2>
-                      <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
-                      <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>       
-            </div>     
-          </div>
-        </div>
-        <div class="cgroup horizontal-gutters">
-          <div class="l-50 m-100 s-100">  
-            <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
-              <div class="cgroup horizontal-gutters">
-                <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
-                  <img src="img/speaker.png" alt="">
-                </div>
-                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
-                  <div class="tr">
-                    <div class="td">
-                      <h2>Celso Martinho</h2>
-                      <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
-                      <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>       
-            </div>
-          </div>
-          <div class="l-50 m-100 s-100">
-            <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
-              <div class="cgroup horizontal-gutters">
-                <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
-                  <img src="img/speaker.png" alt="">
-                </div>
-                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
-                  <div class="tr">
-                    <div class="td">
-                      <h2>Celso Martinho</h2>
-                      <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
-                      <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>       
-            </div>     
-          </div>
-        </div>
-        <div class="cgroup horizontal-gutters">
-          <div class="l-50 m-100 s-100">  
-            <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
-              <div class="cgroup horizontal-gutters">
-                <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
-                  <img src="img/speaker.png" alt="">
-                </div>
-                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
-                  <div class="tr">
-                    <div class="td">
-                      <h2>Celso Martinho</h2>
-                      <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
-                      <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>       
-            </div>
-          </div>
-          <div class="l-50 m-100 s-100">
-            <div class="l-half-top-padding">
-              <div class="cgroup horizontal-gutters">
-                <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
-                  <img src="img/speaker.png" alt="">
-                </div>
-                <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
-                  <div class="tr">
-                    <div class="td">
-                      <h2>Celso Martinho</h2>
-                      <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
-                      <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>       
-            </div>     
-          </div>
+          </nav>
         </div>
       </div>
-    </section>
-    <section class="bottom-padding align-center" id="venues">
-      <img src="img/venue.sp.jpg" class="bottom-space" alt="">
-      <div class="ink-grid">
-        <h1>
-          Where is it going to be?
-        </h1>
-        <h2 class="half-top-space">For the first time, ever, Codebits is going to be held simultaneously in two countries.</h2>
-        <p>
-          In Lisbon, it will take place at the Tejo Room of the MEO Arena, in São Paulo, it will happen in the gorgeous Latin America Memorial. Both events will be connected and share content so all atendees in both sides of the Atlantic can join Codebits.</p>
+      <div class="snap-content" id="content">
+        <section class="vertical-padding" id="intro">
+          <div class="ink-grid">
+            <div class="cgroup top-space vertical-gutters">
+              <div class="l-55 m-70 s-80 push-center">
+                <div class="cgroup half-gutters">
+                  <div class="l-30 m-30 s-30 header-bubble">
+                    <img src="img/watch-a-movie.svg" alt="watch a movie">                  
+                  </div>
+                  <div class="l-40 m-40 s-40 header-bot">
+                    <img src="img/bot.svg" alt="watch a movie">
+                  </div>
+                </div>
+                <div class="l-100 m-100 s-100 vertical-spacing logo bordered">
+                  <img src="img/codebits.svg" alt="watch a movie">                
+                </div>
+                <div class="cgroup quarter-top-space">
+                  <div class="l-33 m-33 s-100 s-align-center align-left fw-bold">LISBON 11-13</div>
+                  <div class="l-33 m-33 s-100 s-align-center align-center fw-bold">MARCH 2014</div>
+                  <div class="l-33 m-33 s-100 s-align-center align-right fw-bold">S. PAULO 12-14</div>
+                </div>
+              </div>
+              <div class="l-100 m-100 s-100 align-center">
+                <p class="large-txt white-txt">Join an elite of tech wizards for three non-stop days of talks,<br class="hide-s hide-m">
+                  workshops and competitions, for free in Lisbon and São Paulo.</p>
+                </div>
+                <div class="l-100 m-100 s-100 align-center">
+                  <p><a href="#" class="cb-button large white">SIGN UP NOW</a></p>
+                </div>
+              </div>
+            </div> 
+          </section>
+          <section class="vertical-padding" id="about">
+            <div class="ink-grid">
+              <h1 class="half-bottom-space align-center">WHAT’S THIS ALL ABOUT, THEN?</h1>
+              <div class="cgroup gutters">
+                <div class="l-33 m-33 s-100">
+                  <h2>participate</h2>
+                  <p class="small-border-bottom s-bottom-padding">It’s a group of 800 geeks in each venue, for 3 days of non-stop tech and a 48-hour programming competiton.</p>
+                </div>
+                <div class="l-33 m-33 s-100">
+                  <h2>LEARN</h2>
+                  <p class="small-border-bottom s-bottom-padding">It’s great talks, from soft to hardware and everything in between, given by famous heavyweights or... you!</p>
+                </div>
+                <div class="l-33 m-33 s-100">
+                  <h2>EXPERIMENT</h2>
+                  <p class="small-border-bottom s-bottom-padding">It’s hours of workshops so you can get your hands dirty, be it writing code or soldering components to build a robot.</p>
+                </div>
+              </div>
+              <div class="cgroup gutters">
+                <div class="l-33 m-33 s-100">
+                  <h2>BUILD</h2>
+                  <p class="small-border-bottom s-bottom-padding">It’s lots of hardware demos, 3D printing, arduinos, robots and all sorts of gadgets, because open hardware is here now!</p>
+                </div>
+                <div class="l-33 m-33 s-100">
+                  <h2>PLAY</h2>
+                  <p class="small-border-bottom s-bottom-padding">It’s a quiz show, a security competition, surprise games, weird culinary experiments and all sorts of geeky fun.</p>
+                </div>
+                <div class="l-33 m-33 s-100">
+                  <h2>ENJOY</h2>
+                  <p>It’s free. Food, network, sleep over. It’s new friends, new knowledge and an totally unforgettable experience.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="vertical-padding" id="speakers"><div class="ink-grid">
+            <h1 class="half-bottom-space s-align-center">
+              Who's going to be talking?
+            </h1>
+            <div class="cgroup horizontal-gutters">
+              <div class="l-50 m-100 s-100">  
+                <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
+                  <div class="cgroup horizontal-gutters">
+                    <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
+                      <img src="img/speaker.png" alt="">
+                    </div>
+                    <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
+                      <div class="tr">
+                        <div class="td">
+                          <h2>Celso Martinho</h2>
+                          <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                          <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+              <div class="l-50 m-100 s-100">
+                <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
+                  <div class="cgroup horizontal-gutters">
+                    <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
+                      <img src="img/speaker.png" alt="">
+                    </div>
+                    <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
+                      <div class="tr">
+                        <div class="td">
+                          <h2>Celso Martinho</h2>
+                          <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                          <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>     
+              </div>
+            </div>
+            <div class="cgroup horizontal-gutters">
+              <div class="l-50 m-100 s-100">  
+                <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
+                  <div class="cgroup horizontal-gutters">
+                    <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
+                      <img src="img/speaker.png" alt="">
+                    </div>
+                    <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
+                      <div class="tr">
+                        <div class="td">
+                          <h2>Celso Martinho</h2>
+                          <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                          <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+              <div class="l-50 m-100 s-100">
+                <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
+                  <div class="cgroup horizontal-gutters">
+                    <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
+                      <img src="img/speaker.png" alt="">
+                    </div>
+                    <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
+                      <div class="tr">
+                        <div class="td">
+                          <h2>Celso Martinho</h2>
+                          <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                          <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>     
+              </div>
+            </div>
+            <div class="cgroup horizontal-gutters">
+              <div class="l-50 m-100 s-100">  
+                <div class="small-border-bottom medium-border-bottom speaker l-half-vertical-padding">
+                  <div class="cgroup horizontal-gutters">
+                    <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
+                      <img src="img/speaker.png" alt="">
+                    </div>
+                    <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
+                      <div class="tr">
+                        <div class="td">
+                          <h2>Celso Martinho</h2>
+                          <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                          <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+              <div class="l-50 m-100 s-100">
+                <div class="l-half-top-padding">
+                  <div class="cgroup horizontal-gutters">
+                    <div class="l-50 m-40 s-60 s-push-center speaker-avatar">
+                      <img src="img/speaker.png" alt="">
+                    </div>
+                    <div class="l-50 m-60 s-100 s-top-space speaker-info s-align-center">
+                      <div class="tr">
+                        <div class="td">
+                          <h2>Celso Martinho</h2>
+                          <p class="talk-title">In as calm, but rapid a manner as possible, I gave her to understand the whole case.</p>
+                          <p class="twitter-handle"><a href="https://twitter.com/celso">@celso</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>     
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bottom-padding align-center" id="venues">
+          <img src="img/venue.sp.jpg" class="bottom-space" alt="">
+          <div class="ink-grid">
+            <h1>
+              Where is it going to be?
+            </h1>
+            <h2 class="half-top-space">For the first time, ever, Codebits is going to be held simultaneously in two countries.</h2>
+            <p>
+              In Lisbon, it will take place at the Tejo Room of the MEO Arena, in São Paulo, it will happen in the gorgeous Latin America Memorial. Both events will be connected and share content so all atendees in both sides of the Atlantic can join Codebits.</p>
+            </div>
+          </section>
+          <section class="vertical-padding" id="past-editions"><div class="ink-grid">
+            <h1>
+              past-editions
+            </h1>
+          </div></section>
+          <section class="vertical-padding" id="blog"><div class="ink-grid">
+            <h1>
+              blog
+            </h1>                
+          </div></section>
         </div>
-      </section>
-      <section class="vertical-padding" id="past-editions"><div class="ink-grid">
-        <h1>
-          past-editions
-        </h1>
-      </div></section>
-      <section class="vertical-padding" id="blog"><div class="ink-grid">
-        <h1>
-          blog
-        </h1>                
-      </div></section>
-    </div>
-    <script type="text/javascript" src="js/cb2014.js"></script>
-  </body>
+        <script type="text/javascript" src="js/cb2014.js"></script>
+      </body>
 
-  </html>
+      </html>

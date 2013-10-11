@@ -86,4 +86,8 @@ window.addEventListener('resize', function(){
         }
     });
 
+    $('.flexslider').flexslider({
+        animation: "slide"
+      });
+
 }).call(this, window, document);

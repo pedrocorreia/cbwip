@@ -20,6 +20,7 @@
   <link rel="apple-touch-startup-image" href="../img/splash.768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
   <link rel="apple-touch-startup-image" href="../img/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
   <link rel="stylesheet" type="text/css" href="css/codebits2014.css">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
   <!--[if IE 7 ]>
   <link rel="stylesheet" href="../css/ink-ie7.css" type="text/css" media="screen"
   title="no title" charset="utf-8">
@@ -29,6 +30,8 @@
   <script type="text/javascript" src="http://cdn.ink.sapo.pt/2.2.1/js/ink-all.min.js"></script>  
   <!-- <script type="text/javascript" src="http://cdn.ink.sapo.pt/2.2.1/js/autoload.js"></script>   -->
   <script type="text/javascript" src="js/kink.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 </head>
 
 <body>
@@ -239,7 +242,7 @@
             </div>
           </section>
           <section class="vertical-padding" id="speakers"><div class="ink-grid">
-            <h1 class="half-bottom-space align-center" style="padding-bottom: 2em; border-bottom: 1px solid black">
+            <h1 class="half-bottom-space align-center">
               Who's going to be talking?
             </h1>
             <div class="cgroup horizontal-gutters">
@@ -359,8 +362,24 @@
           </div>
         </section>
         <section class="bottom-padding align-center" id="venues">
-          <img src="img/venue.sp.jpg" class="bottom-space" alt="">
+          <!-- Place somewhere in the <body> of your page -->
           <div class="ink-grid">
+          <div class="flexslider">
+          <ul class="slides">
+            <li>      
+              <img src="img/venue.sp.jpg" class="bottom-space" alt="">
+            </li>
+            <li>
+              <img src="img/venue.sp.jpg" class="bottom-space" alt="">
+            </li>
+            <li>
+              <img src="img/venue.sp.jpg" class="bottom-space" alt="">
+            </li>
+            <li>
+              <img src="img/venue.sp.jpg" class="bottom-space" alt="">
+            </li>
+          </ul>
+          </div>
             <h1>
               Where is it going to be?
             </h1>

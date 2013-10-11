@@ -6433,7 +6433,7 @@ div#blog {
   background: #ffffff;
 }
 form.login {
-  padding: 1em 1em 0 1em ;
+  padding: 0 1em;
   font-size: 1em;
   color: white;
 }
@@ -6448,7 +6448,6 @@ form.login .control-group .cb-button {
   width: 100%;
 }
 .cb-button {
-  box-sizing: content-box;
   padding: 10px 15px;
   border-radius: 3px;
   border: none;
@@ -6470,10 +6469,29 @@ form.login .control-group .cb-button {
   color: #54b948;
 }
 .cb-button.white:hover {
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(34, 75, 29, 0.5);
-  -moz-box-shadow: 0px 0px 4px 1px rgba(34, 75, 29, 0.5);
-  box-shadow: 0px 0px 4px 1px rgba(34, 75, 29, 0.5);
+  -webkit-transition-property: "background-color, color";
+  -moz-transition-property: "background-color, color";
+  -o-transition-property: "background-color, color";
+  -ms-transition-property: "background-color, color";
+  transition-property: "background-color, color";
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  -ms-transition-duration: 100ms;
+  transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -ms-transition-delay: 0;
+  transition-delay: 0;
   text-decoration: none;
+  background: #32702b;
+  color: #ffffff;
 }
 div.speaker-avatar {
   position: relative;

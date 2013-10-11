@@ -6448,7 +6448,8 @@ form.login .control-group .cb-button {
   width: 100%;
 }
 .cb-button {
-  padding: 1em 1.5em;
+  box-sizing: content-box;
+  padding: 10px 15px;
   border-radius: 3px;
   border: none;
 }

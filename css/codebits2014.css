@@ -6296,6 +6296,12 @@ body {
   background: #1b1b1b;
   font-size: 18px;
 }
+.logo.bordered {
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  padding-top: 0.6em;
+  padding-bottom: 0.3em;
+}
 .topbar {
   background: #1b1b1b;
   position: absolute;

@@ -6308,13 +6308,21 @@ body {
   padding-top: 0.6em;
   padding-bottom: 0.3em;
 }
-a#main-toggler {
+#main-toggler,
+#user-toggler {
+  line-height: 1.7;
+  background: none;
+  border: none;
+  color: #54b948;
+}
+#main-toggler {
   padding: 0.5em 1em;
   padding-left: 0;
 }
-a#user-toggler {
+#user-toggler {
   padding: 0.5em 1em;
   padding-right: 0;
+  line-height: 1.7;
 }
 .topbar {
   background: #1b1b1b;

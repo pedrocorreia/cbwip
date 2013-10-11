@@ -68,14 +68,22 @@ body {
   }
 }
 
-a#main-toggler {
+#main-toggler, #user-toggler {
+  line-height: @navigation-line-height;
+  background: none;
+  border: none;
+  color: @green;
+}
+
+#main-toggler {
   padding: @navigation-padding;
   padding-left: 0;
 }
 
-a#user-toggler {
+#user-toggler {
   padding: @navigation-padding;
   padding-right: 0;
+  line-height: @navigation-line-height;
 }
 
 .topbar {

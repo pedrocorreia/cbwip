@@ -6314,6 +6314,7 @@ body {
   background: none;
   border: none;
   color: #54b948;
+  outline: transparent;
 }
 #main-toggler {
   padding: 0.5em 1em;

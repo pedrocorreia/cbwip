@@ -6513,6 +6513,10 @@ section p + p {
   .medium-border-bottom {
     border-bottom: 1px rgba(27, 27, 27, 0.2) solid;
   }
+  .logo.bordered {
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+  }
 }
 /* SMALL SCREENS */
 @media screen and (max-width: 649px) {
@@ -6521,5 +6525,9 @@ section p + p {
   }
   .small-border-bottom {
     border-bottom: 1px rgba(27, 27, 27, 0.2) solid;
+  }
+  .logo.bordered {
+    border-top-width: 3px;
+    border-bottom-width: 3px;
   }
 }

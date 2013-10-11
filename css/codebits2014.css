@@ -6290,6 +6290,12 @@ body {
 .fw-light {
   font-family: "museosans-100";
 }
+.white-txt {
+  color: #ffffff;
+}
+.large-txt {
+  font-size: 1.3em;
+}
 body {
   font-family: "museosans-300";
   color: #1b1b1b;

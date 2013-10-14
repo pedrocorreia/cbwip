@@ -1,5 +1,5 @@
 // (function(){
-var snapper = new Snap({
+  var snapper = new Snap({
     element: document.getElementById('content'),
     dragger: null,
     disable: 'none',
@@ -16,78 +16,99 @@ var snapper = new Snap({
     slideIntent: 40,
     minDragDistance: 5,
     additionalElements: ['main-nav'],
-});
+  });
 
-document.getElementById("main-toggler").addEventListener('click', function(){
+  document.getElementById("main-toggler").addEventListener('click', function(){
     if( snapper.state().state=="left" ){
-        snapper.close();
+      snapper.close();
     } else {
-        snapper.open('left');
+      snapper.open('left');
     }
-});
-document.getElementById("user-toggler").addEventListener('click', function(){
+  });
+  document.getElementById("user-toggler").addEventListener('click', function(){
     if( snapper.state().state=="right" ){
+      snapper.close();
+    } else {
+      snapper.open('right');
+    }
+  });
+  window.addEventListener('load',function(){
+    if (window.innerWidth >= 650) {
+      snapper.disable();
+    }
+  });
+  window.addEventListener('resize', function(){
+    if (window.innerWidth >= 650) {
+      if( snapper.state().state=="open" ){ 
         snapper.close();
-    } else {
-        snapper.open('right');
-    }
-});
-window.addEventListener('load',function(){
-    if (window.innerWidth >= 650) {
         snapper.disable();
-    }
-});
-window.addEventListener('resize', function(){
-    if (window.innerWidth >= 650) {
-        if( snapper.state().state=="open" ){ 
-            snapper.close();
-            snapper.disable();
-        } else {
-            snapper.disable();
-        }
+      } else {
+        snapper.disable();
+      }
     } else {
-        snapper.enable();
+      snapper.enable();
     }
-});
+  });
 
-(function(){
+  (function(){
 
     function speakerInfo(reset) {
-        var tds = Ink.ss('.td');
-        if(reset === true) {
-            for ( var i=0; i < tds.length; i++ ) {
-                var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
-                var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
-                tds[i].removeAttribute('style');
-            } 
-        } else {
-            for ( var i=0; i < tds.length; i++ ) {
-                var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
-                var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
-                tds[i].style.height = avatarHeight + 'px';
-            }
+      var tds = Ink.ss('.td');
+      if(reset === true) {
+        for ( var i=0; i < tds.length; i++ ) {
+          var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
+          var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
+          tds[i].removeAttribute('style');
+        } 
+      } else {
+        for ( var i=0; i < tds.length; i++ ) {
+          var avatarEl = tds[i].parentNode.parentNode.parentNode.firstElementChild;
+          var avatarHeight = Ink.Dom.Element.elementHeight(avatarEl);
+          tds[i].style.height = avatarHeight + 'px';
         }
+      }
     }
 
     window.addEventListener('resize',function(){
-        if (window.innerWidth >= 650) {
-            speakerInfo();
-        } else {
-            speakerInfo(true);
-        }
-        
+      if (window.innerWidth >= 650) {
+        speakerInfo();
+      } else {
+        speakerInfo(true);
+      }
+
     });
 
     window.addEventListener('load',function(){
-        if (window.innerWidth >= 650) {
-            speakerInfo();
-        } else {
-            speakerInfo(true);
-        }
+      if (window.innerWidth >= 650) {
+        speakerInfo();
+      } else {
+        speakerInfo(true);
+      }
     });
 
     $('.flexslider').flexslider({
-        animation: "slide"
-      });
+      animation: "slide"
+    });
 
-}).call(this, window, document);
+    Ink.requireModules( ['Ink.Dom.Selector_1', 'Ink.UI.ImageQuery_1'], function( Selector, ImageQuery ){
+      // var imageQueryElement = Ink.s('.imageQueryExample img');
+      var imageQueryObj = new ImageQuery('img.iq',{
+        src: './img/{:label}/{:file}',
+        queries: [
+        {
+          label: 'small',
+          width: 480
+        },
+        {
+          label: 'medium',
+          width: 640
+        },
+        {
+          label: 'large',
+          width: 1024
+        }   
+        ]
+      });
+    });
+
+  }).call(this, window, document);

@@ -4315,8 +4315,8 @@ Ink.createModule('Ink.UI.ImageQuery', '1', ['Ink.UI.Aux_1','Ink.Dom.Event_1','In
      *      @param {String|Function}    [options.src]             String or Callback function (that returns a string) with the path to be used to get the images.
      *      @param {String|Function}    [options.retina]          String or Callback function (that returns a string) with the path to be used to get RETINA specific images.
      *      @param {Array}              [options.queries]         Array of queries
-     *          @param {String}              [options.queries.label]         Label of the query. Ex. 'small'
-     *          @param {Number}              [options.queries.width]         Min-width to use this query
+     *      @param {String}             [options.queries.label]   Label of the query. Ex. 'small'
+     *      @param {Number}             [options.queries.width]   Min-width to use this query
      *      @param {Function}           [options.onLoad]          Date format string
      *
      * @example
@@ -4339,7 +4339,7 @@ Ink.createModule('Ink.UI.ImageQuery', '1', ['Ink.UI.Aux_1','Ink.Dom.Event_1','In
      *                  },
      *                  {
      *                      label: 'large',
-     *                      width: 1024
+     *                      width: 961
      *                  }   
      *              ]
      *          });

@@ -6400,7 +6400,6 @@ html[xmlns] .slides {
   opacity: 0;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -6413,11 +6412,11 @@ html[xmlns] .slides {
   text-align: right;
 }
 .flexslider:hover .flex-prev {
-  opacity: 0.7;
+  opacity: 0.8;
   left: 15px;
 }
 .flexslider:hover .flex-next {
-  opacity: 0.7;
+  opacity: 0.8;
   right: 15px;
 }
 .flexslider:hover .flex-next:hover,

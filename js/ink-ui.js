@@ -5925,7 +5925,6 @@ Ink.createModule('Ink.UI.SmoothScroller', '1', ['Ink.Dom.Event_1','Ink.Dom.Selec
          */
         render: function() {
             var a = Selector.select('a.scrollableLink');
-
             Ink.UI.SmoothScroller.end(this);
 
             for (var i = 0; i < a.length; i++) {

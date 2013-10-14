@@ -39,7 +39,7 @@
   });
   window.addEventListener('resize', function(){
     if (window.innerWidth >= 650) {
-      if( snapper.state().state=="open" ){ 
+      if( snapper.state().state=="left" || snapper.state().state=="right" ){ 
         snapper.close();
         snapper.disable();
       } else {
@@ -90,6 +90,11 @@
       animation: "slide"
     });
 
+    $('a.smooth').smoothScroll({
+      preventDefault: false,
+      scrollElement: $('div.snap-content')
+    });
+
     Ink.requireModules( ['Ink.Dom.Selector_1', 'Ink.UI.ImageQuery_1'], function( Selector, ImageQuery ){
       // var imageQueryElement = Ink.s('.imageQueryExample img');
       var imageQueryObj = new ImageQuery('img.iq',{
@@ -109,6 +114,10 @@
         }   
         ]
       });
+    });
+
+    Ink.requireModules( ['Ink.Dom.Selector_1', 'Ink.UI.SmoothScroller_1'], function( Selector, SmoothScroller ){
+      console.log('asdjhadshjasjasjhasjhadsjhg');
     });
 
   }).call(this, window, document);

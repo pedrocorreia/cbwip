@@ -6623,7 +6623,9 @@ body {
   color: #54b948;
   text-transform: uppercase;
 }
-.cb-nav a:hover {
+.cb-nav a:hover,
+.cb-nav a:active,
+.cb-nav a:focus {
   color: #ffffff;
   text-decoration: none;
 }

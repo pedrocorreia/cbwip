@@ -6628,6 +6628,8 @@ body {
 .cb-nav a:focus {
   color: #ffffff;
   text-decoration: none;
+  border: 1px solid red;
+  background: red;
 }
 #side-nav h1 {
   font-size: 1.8em;

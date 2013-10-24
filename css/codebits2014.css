@@ -2018,7 +2018,8 @@ a .icon-flip-vertical:before {
   -ms-transition-delay: 0;
   transition-delay: 0;
 }
-.ink-navigation ul.menu li:hover ul.submenu {
+.ink-navigation ul.menu li:hover ul.submenu,
+.ink-navigation ul.menu li:active ul.submenu {
   display: block;
 }
 .ink-navigation ul.menu li ul.submenu {

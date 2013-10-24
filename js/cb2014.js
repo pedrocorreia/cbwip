@@ -87,12 +87,8 @@
     });
 
     $('.flexslider').flexslider({
-      animation: "slide"
-    });
-
-    $('a.smooth').smoothScroll({
-      preventDefault: false,
-      scrollElement: $('div.snap-content')
+      animation: "slide",
+      controlNav: false,
     });
 
     Ink.requireModules( ['Ink.Dom.Selector_1', 'Ink.UI.ImageQuery_1'], function( Selector, ImageQuery ){
